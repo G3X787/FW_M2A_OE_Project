@@ -1,5 +1,7 @@
 M2A_Ideas
 
+Art with SDXL possibly
+
  looking like a 2D game
 
 
