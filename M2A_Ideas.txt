@@ -1,11 +1,16 @@
 M2A_Ideas
 
+
+Art with SDXL possibly
+
+ looking like a 2D game
+
+
 Nathan - 
 Nioh 2
 Divinity Origional Sin 2
 Vampire Survivors
 
-<<<<<<< HEAD
 2D Horror explorer:
 	- A Wicher-like system where you detect the supernatural with hightened senses
 	- No combat (scarier when the player cant do anything against the enemy)
@@ -16,7 +21,7 @@ Vampire Survivors
 	- Different levels with bosses and unlockables
 	- Big leveling system (big numbers make me happy)
 	- Different classes?
-=======
+
 
 
 
@@ -40,8 +45,5 @@ loosly based off of Hollow knight and subnautica also if you have seen it or not
 2nd Game idea : A 2d horror game based where you play as a sercurity gaurd for an apartment building. there you sit at your desk and have to let the residents in while keeping anything else out. to communicate with your residents trying to enter, you will recieve messages from them on your console about their i.d and other such as well as greetings. you can let them in or not by pressing the green or red button.
 loosly based off of passports please, five knights at freddy's and doki doki literature club
 
-final game idea: A survival horror game taking place in a sunken submarine. the main character has to traverse the submarine (not that large of a submarine) while having to worry about his oxygen. the submarine took a hit and so while the submarine is closed off from the damage. the floors ars still soaked with water. You and your friends( maybe if we add multiplayer =) ) have to survive 10 days as randomelly generated events happen around the submarine. Events like: power outage, low O2, creature on ship, sinking, etc...
 
-based off of: subnautica, a specific part of silent hill homecoming and among us ( I can explain)
 
->>>>>>> d5cdb9b5346e2f9d1d91b430f4b81f0387e511da
