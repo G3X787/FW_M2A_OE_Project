@@ -3,8 +3,9 @@ M2A_Ideas
 
 Art with SDXL possibly
 
- looking like a 2D game
-
+ 2D game
+ 8 way movement
+ 
 
 Nathan - 
 Nioh 2
