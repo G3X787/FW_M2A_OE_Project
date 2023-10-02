@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,12 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1344106861
+    locked: 0
+  - name: decoration
+    uniqueID: 1687961755
+    locked: 0
+  - name: Wall
+    uniqueID: 1508358393
     locked: 0
   - name: Top lights
     uniqueID: 2553719361
