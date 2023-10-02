@@ -11,10 +11,13 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     public float speed;
     Vector2 movement = Vector2.zero;
+    public InteractableObject interactableObject;
+    public InteractType interactType;
+    
 
     void Awake()
     {
-        inputs = new PlayerInputs(); // Initializes the variable (makes the variable an instance to an objects/allows it to be something other than null).
+        inputs = new PlayerInputs(); // Initializes the variable
         rb = GetComponent<Rigidbody2D>();
         inputs.Player.HorizontalMovement.performed += ctx => Move(); // Reading the value given based off of what key was pressed ('a' for -1 and 'd' for 1)
         inputs.Player.VerticalMovement.performed += ctx => Move();
