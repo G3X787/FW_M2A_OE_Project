@@ -9,11 +9,17 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.updateUpAxis = false;
+        agent.updateRotation = false;
     }
 
     void Update()
     {
-        // Set the destination to the player's position.
-        agent.SetDestination(player.position);
+        // Check if the agent is not null and active.
+        if (agent != null && agent.isActiveAndEnabled)
+        {
+            // Set the destination to the player's position.
+            agent.SetDestination(player.position);
+        }
     }
 }
