@@ -57,3 +57,6 @@ TagManager:
   - name: Top lights
     uniqueID: 2553719361
     locked: 0
+  - name: hidden
+    uniqueID: 3278120605
+    locked: 0
