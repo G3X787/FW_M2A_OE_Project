@@ -23,13 +23,13 @@ Vampire Survivors
 	- Big leveling system (big numbers make me happy)
 	- Different classes?
 
+Define the goal for the game.
 
 
+Save points
 
 
-
-
-
+Vote for Themes/Setting for the game [x]
 
 
 
@@ -48,3 +48,6 @@ loosly based off of passports please, five knights at freddy's and doki doki lit
 
 
 A 2d top down horror explorer game with 4-way player movement
+
+Theme : Caves/Tunnels
+Sound: echoey sounds
