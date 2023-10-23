@@ -29,7 +29,7 @@ Define the goal for the game.
 Save points
 
 
-Vote for Themes/Setting for the game
+Vote for Themes/Setting for the game [x]
 
 
 
