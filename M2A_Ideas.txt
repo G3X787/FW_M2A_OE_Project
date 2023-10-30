@@ -29,7 +29,7 @@ Define the goal for the game.
 Save points
 
 
-Vote for Themes/Setting for the game [x]
+
 
 
 
@@ -49,5 +49,15 @@ loosly based off of passports please, five knights at freddy's and doki doki lit
 
 A 2d top down horror explorer game with 4-way player movement
 
+could do sound
+could do some artwork
+
+
+
+
+// ---------------------------------------------------------------------
+Game Values that the group have agreed on
+
 Theme : Caves/Tunnels
 Sound: echoey sounds
+Perspective: 45 angled camera
