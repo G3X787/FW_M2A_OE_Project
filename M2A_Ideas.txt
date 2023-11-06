@@ -26,13 +26,14 @@ Vampire Survivors
 Define the goal for the game.
 
 
-Save points
+Save points?
+Sounds - no music, just sfx?
+Game over - just end and restart, or play a scene and then restart?
 
 
+What should the game play like?
 
-
-
-
+William: ( manage light resource, manage the map/direction memory )
 
 
 
