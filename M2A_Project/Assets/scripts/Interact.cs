@@ -42,12 +42,12 @@ public abstract class Interact : MonoBehaviour
         if (canInteract && p.eKey != 0)
         {
             interacted = true;
-            Open();
+            Function();
             StartCoroutine(Cooldown());
         }
     }
 
-    public abstract void Open();
+    public abstract void Function();
 
     IEnumerator Cooldown()
     {

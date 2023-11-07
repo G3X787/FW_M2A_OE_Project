@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     Vector2 targetVelocity;
     Vector2 velocitySmoothing;
     public float eKey;
+    public int itemList = 0;
 
     void Awake()
     {
@@ -22,13 +23,13 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         inputs.Player.HorizontalMovement.performed += ctx => Move(); // Reading the value given based off of what key was pressed ('a' for -1 and 'd' for 1)
         inputs.Player.VerticalMovement.performed += ctx => Move();
-        inputs.Player.Interact.performed += ctx => Interact();
+        inputs.Player.Interact.performed += ctx => InteractKey();
     }
 
     void FixedUpdate()
     {
         Move();
-        Interact();
+        InteractKey();
     }
 
     void Move()
@@ -42,9 +43,14 @@ public class Player : MonoBehaviour
         //rb.velocity = movement * speed;
     }
 
-    void Interact()
+    void InteractKey()
     {
         eKey = inputs.Player.Interact.ReadValue<float>();
+    }
+
+    void Inventory()
+    {
+
     }
 
     private void OnEnable()

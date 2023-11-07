@@ -12,12 +12,12 @@ public class Door : Interact
     {
         player = GameObject.FindGameObjectWithTag("Player");
         p = FindObjectOfType<Player>();
-        interactableObject = GameObject.FindGameObjectWithTag("Interactable");
+        interactableObject = GameObject.FindGameObjectWithTag("Door");
         pivotPoint = transform.Find("PivotPoint");
         coll = transform.parent.GetComponent<CapsuleCollider2D>();
     }
 
-    public override void Open()
+    public override void Function()
     {
         if (interacted)
         {
