@@ -9,13 +9,15 @@ public class Player : MonoBehaviour
     // Variables
     PlayerInputs inputs; // Creates a reference to PlayerInput (the input system).
     Rigidbody2D rb;
-    public float speed;
-    public float smoothTime;
     Vector2 movement = Vector2.zero;
     Vector2 targetVelocity;
     Vector2 velocitySmoothing;
     public float eKey;
-    public int itemList = 0;
+    
+    [Header("Speed Variables")]
+    [SerializeField] float speed;
+    [SerializeField] float smoothTime;
+    [SerializeField] float sprintBoost;
 
     void Awake()
     {
@@ -36,9 +38,11 @@ public class Player : MonoBehaviour
     {
         movement.x = inputs.Player.HorizontalMovement.ReadValue<float>();
         movement.y = inputs.Player.VerticalMovement.ReadValue<float>();
+
         // Buttery Movement
-        targetVelocity = movement * speed;
+        targetVelocity = movement * (speed + (inputs.Player.Sprint.ReadValue<float>() * sprintBoost));
         rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref velocitySmoothing, smoothTime);
+
         // Sharp Movement
         //rb.velocity = movement * speed;
     }
@@ -46,11 +50,6 @@ public class Player : MonoBehaviour
     void InteractKey()
     {
         eKey = inputs.Player.Interact.ReadValue<float>();
-    }
-
-    void Inventory()
-    {
-
     }
 
     private void OnEnable()
