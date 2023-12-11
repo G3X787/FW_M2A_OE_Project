@@ -10,9 +10,9 @@ public class Door : Interact
     int reverseDoor = -1;
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        p = FindObjectOfType<Player>();
+        Init();
         interactableObject = GameObject.FindGameObjectWithTag("Door");
+
         pivotPoint = transform.Find("PivotPoint");
         coll = transform.parent.GetComponent<CapsuleCollider2D>();
     }

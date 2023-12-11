@@ -9,12 +9,19 @@ public abstract class Interact : MonoBehaviour
     public CapsuleCollider2D coll;
     public GameObject player;
     public GameObject interactableObject;
-    public GameObject interactUI;
+    public static GameObject interactUI;
     public bool canInteract;
     public bool interacted;
     public bool isTimerDone;
     public float cooldown = 1.5f;
     public Player p;
+
+    public void Init()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        p = FindObjectOfType<Player>();
+        interactUI = GameObject.FindGameObjectWithTag("InteractionUI");
+    }
 
     // Update is called once per frame
     public virtual void Update()
@@ -23,7 +30,7 @@ public abstract class Interact : MonoBehaviour
         Interacted();
     }
 
-    void CanInteract()
+    public void CanInteract()
     {
         if (player.GetComponent<BoxCollider2D>().IsTouching(coll) && isTimerDone)
         {
