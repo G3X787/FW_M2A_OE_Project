@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -42,9 +43,6 @@ public class Player : MonoBehaviour
         // Buttery Movement
         targetVelocity = movement * (speed + (inputs.Player.Sprint.ReadValue<float>() * sprintBoost));
         rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref velocitySmoothing, smoothTime);
-
-        // Sharp Movement
-        //rb.velocity = movement * speed;
     }
 
     void InteractKey()
