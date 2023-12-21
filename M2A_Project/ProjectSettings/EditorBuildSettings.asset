@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/The final game/Startup-menu.unity
     guid: c838564d1bd70624b90b8aec24841e20
   - enabled: 1
-    path: Assets/Scenes/The final game/MainGame.unity
+    path: Assets/Scenes/The final game/Game rooms/Entrance.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/The final game/Game rooms/Hallway 1.unity
+    guid: e29e2c13d66f4944dbdcc9369619cdf9
   m_configObjects: {}
