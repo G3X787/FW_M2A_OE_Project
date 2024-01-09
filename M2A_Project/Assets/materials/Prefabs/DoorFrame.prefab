@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6167795648888668195}
   - component: {fileID: 4412207097453640018}
-  - component: {fileID: 8785254139906547102}
-  - component: {fileID: 7566907398065692340}
+  - component: {fileID: 6622468554757946417}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -31,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7948221424901979269}
+  m_Children: []
   m_Father: {fileID: 2012165749436353152}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4412207097453640018
@@ -87,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8785254139906547102
+--- !u!61 &6622468554757946417
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,27 +130,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7566907398065692340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5153293913074481016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 988f47e237b69ba44905f143558befd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coll: {fileID: 0}
-  player: {fileID: 0}
-  interactableObject: {fileID: 0}
-  interactUI: {fileID: 0}
-  canInteract: 0
-  interacted: 0
-  isTimerDone: 1
-  cooldown: 1.5
-  p: {fileID: 0}
 --- !u!1 &6323798991910655718
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,12 +154,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6323798991910655718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.1999999, z: 0}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6167795648888668195}
+  m_Father: {fileID: 2012165749436353152}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6950736747521455809
 GameObject:
@@ -194,6 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2012165749436353152}
   - component: {fileID: 6608810623367569590}
+  - component: {fileID: 5719339758875528548}
   m_Layer: 0
   m_Name: DoorFrame
   m_TagString: Untagged
@@ -214,6 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7948221424901979269}
   - {fileID: 6167795648888668195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,3 +231,21 @@ CapsuleCollider2D:
   m_Offset: {x: -1, y: 0}
   m_Size: {x: 1, y: 3}
   m_Direction: 0
+--- !u!114 &5719339758875528548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6950736747521455809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988f47e237b69ba44905f143558befd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  canInteract: 0
+  interacted: 0
+  isTimerDone: 0
+  cooldown: 1.5
+  p: {fileID: 0}

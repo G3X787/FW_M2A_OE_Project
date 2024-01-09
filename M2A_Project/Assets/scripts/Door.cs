@@ -8,13 +8,12 @@ public class Door : Interact
 {
     Transform pivotPoint;
     int reverseDoor = -1;
+
     void Start()
     {
         Init();
-        interactableObject = GameObject.FindGameObjectWithTag("Door");
 
         pivotPoint = transform.Find("PivotPoint");
-        coll = transform.parent.GetComponent<CapsuleCollider2D>();
     }
 
     public override void Function()

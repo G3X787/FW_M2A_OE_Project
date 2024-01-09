@@ -6,9 +6,7 @@ using UnityEngine.InputSystem;
 
 public abstract class Interact : MonoBehaviour
 {
-    public CapsuleCollider2D coll;
     public GameObject player;
-    public GameObject interactableObject;
     public bool canInteract;
     public bool interacted;
     public bool isTimerDone;
@@ -17,29 +15,37 @@ public abstract class Interact : MonoBehaviour
 
     public static Interact instance;
 
+    GameObject interactUI;
+
     public void Init()
     {
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
         p = FindObjectOfType<Player>();
+        interactUI = GameObject.FindGameObjectWithTag("InteractionUI");
     }
 
     // Update is called once per frame
     public virtual void Update()
     {
-        CanInteract();
         Interacted();
     }
 
-    public void CanInteract()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (player.GetComponent<BoxCollider2D>().IsTouching(coll) && isTimerDone)
+        if (collision.gameObject.CompareTag("Player"))
         {
             canInteract = true;
+            interactUI.SetActive(true);
         }
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
             canInteract = false;
+            interactUI.SetActive(false);
         }
     }
 
